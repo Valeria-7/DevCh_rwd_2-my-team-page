@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  background: #fafafa;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 240px;
+}
+
+.header {
+  margin-top: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+}
+
+.header-info {
+  max-width: 440px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.info-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
