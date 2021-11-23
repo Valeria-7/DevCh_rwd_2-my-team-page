@@ -11,7 +11,8 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 240px;
+  max-width: 960px;
+  width: 100%;
 }
 
 .header {
@@ -98,4 +99,62 @@ body {
 
 .footer-link:hover {
   color: #7e7b7b;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 70%;
+  }
+  .header {
+    flex-direction: column;
+  }
+
+  .info-title {
+    margin-top: 38px;
+  }
+
+  .main {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .card:nth-child(n) {
+    margin-top: 0;
+  }
+
+  .card:nth-child(2n) {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .info-description {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .header {
+    margin-top: 71px;
+    margin-bottom: 48px;
+  }
+
+  .card-name {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .card-job {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .main {
+    column-gap: 40px;
+    row-gap: 16px;
+  }
+
+  .card-image {
+    margin-right: 6px;
+    margin-bottom: 10px;
+  }
 }
